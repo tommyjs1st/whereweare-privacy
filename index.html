@@ -128,7 +128,7 @@
             <li><strong>위치 정보</strong>: GPS 기반 실시간 위치 (위도, 경도, 정확도, 속도)</li>
             <li><strong>사용자 식별 정보</strong>: 기기 고유 식별자(Device ID), FCM 토큰</li>
             <li><strong>사용자 설정 정보</strong>: 별명(닉네임), 호출부호(Topic)</li>
-            <li><strong>기기 정보</strong>: 배터리 잔량, 전송 시간</li>
+            <li><strong>기기 정보</strong>: 전송 시간</li>
         </ul>
         
         <h3>1.2 개인정보의 수집 방법</h3>
@@ -150,9 +150,9 @@
         
         <h3>3.1 실시간 위치 정보</h3>
         <ul>
-            <li><strong>서버 임시 저장</strong>: 최대 5분간 임시 보관 후 자동 삭제</li>
+            <li><strong>서버를 통한 전송</strong>: 서버내 별도 저장은 하지 않으며, 위치 전송시 서버를 통해 전송</li>
             <li><strong>기기 로컬 저장</strong>: 최대 24시간 캐시 저장 후 자동 삭제</li>
-            <li><strong>장기 보관 없음</strong>: 위치 정보는 데이터베이스에 영구 저장되지 않습니다</li>
+            <li><strong>장기 보관 없음</strong>: 위치 정보는 데이터베이스에 저장되지 않습니다</li>
         </ul>
         
         <h3>3.2 사용자 설정 정보</h3>
