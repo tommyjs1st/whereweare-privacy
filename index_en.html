@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Where We Are</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        
+        ul {
+            margin-bottom: 16px;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #f5f5f7;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact {
+            background-color: #007aff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        
+        .contact h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .contact a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Last Updated: January 1, 2025 | Effective Date: January 1, 2025</p>
+        
+        <div class="highlight">
+            <p><strong>Where We Are</strong> (the "App") values your privacy and complies with applicable privacy laws and regulations.</p>
+        </div>
+        
+        <h2>1. Purpose of Collecting and Using Personal Information</h2>
+        <p>The App collects the following personal information to provide real-time location sharing services between friends:</p>
+        
+        <h3>1.1 Types of Personal Information Collected</h3>
+        <ul>
+            <li><strong>Location Information</strong>: GPS-based real-time location (latitude, longitude, accuracy, speed)</li>
+            <li><strong>User Identification</strong>: Device unique identifier (Device ID), FCM token</li>
+            <li><strong>User Settings</strong>: Nickname, Call sign (Topic)</li>
+            <li><strong>Device Information</strong>: Transmission timestamp</li>
+        </ul>
+        
+        <h3>1.2 Methods of Collection</h3>
+        <ul>
+            <li>Directly entered by users during app usage</li>
+            <li>Automatically collected when location permission is granted</li>
+            <li>Received through FCM (Firebase Cloud Messaging)</li>
+        </ul>
+        
+        <h2>2. Purpose of Using Personal Information</h2>
+        <p>The collected personal information is used solely for the following purposes:</p>
+        <ul>
+            <li><strong>Location Sharing Service</strong>: Real-time location sharing with friends using the same call sign (Topic)</li>
+            <li><strong>Location Request/Response Processing</strong>: Automatic response to friends' location requests</li>
+            <li><strong>Service Quality Improvement</strong>: App error analysis and service enhancement</li>
+        </ul>
+        
+        <h2>3. Retention and Use Period of Personal Information</h2>
+        
+        <h3>3.1 Real-time Location Information</h3>
+        <ul>
+            <li><strong>Server Transmission</strong>: Not stored on the server; only used for message relay</li>
+            <li><strong>Local Device Storage</strong>: Cached for up to 24 hours to display friends' last known locations, then automatically deleted</li>
+            <li><strong>No Long-term Storage</strong>: Location information is not stored in any database</li>
+        </ul>
+        
+        <h3>3.2 User Settings Information</h3>
+        <ul>
+            <li><strong>Device Storage</strong>: Retained until the app is deleted</li>
+            <li><strong>No Server Storage</strong>: Nickname and call sign are stored only on the device and not transmitted to servers</li>
+        </ul>
+        
+        <h2>4. Provision of Personal Information to Third Parties</h2>
+        <p>The App does not provide personal information to third parties, except in the following cases:</p>
+        <ul>
+            <li><strong>Users with Same Call Sign</strong>: Location information is shared in real-time with friends using the same call sign (with user's explicit consent)</li>
+            <li><strong>Legal Requirements</strong>: When required by law or necessary to comply with legal obligations</li>
+        </ul>
+        
+        <div class="highlight">
+            <p><strong>Important:</strong> Sharing a call sign (Topic) means sharing your location information with all users in that group. Only share your call sign with people you trust.</p>
+        </div>
+        
+        <h2>5. Destruction Procedure and Method</h2>
+        
+        <h3>5.1 Automatic Destruction</h3>
+        <ul>
+            <li><strong>Server Location Data</strong>: No separate storage on server (used only when calling Google FCM service)</li>
+            <li><strong>Local Cache</strong>: Automatically deleted after 24 hours</li>
+        </ul>
+        
+        <h3>5.2 Manual Destruction</h3>
+        <ul>
+            <li><strong>App Deletion</strong>: All information stored on the device is immediately deleted when the app is uninstalled</li>
+            <li><strong>Settings Reset</strong>: All friend location information can be deleted using the 'Delete All Friends' feature in the app</li>
+        </ul>
+        
+        <h2>6. Security Measures</h2>
+        <p>The App takes the following measures to ensure the security of personal information:</p>
+        <ul>
+            <li><strong>Encrypted Communication</strong>: Secure data transmission using HTTPS/TLS protocol</li>
+            <li><strong>Minimal Permissions</strong>: Collecting only the minimum information necessary for service provision</li>
+            <li><strong>Automatic Deletion</strong>: Operating an automatic deletion system when the retention period expires</li>
+            <li><strong>Access Control</strong>: Location information accessible only to users who know the call sign</li>
+        </ul>
+        
+        <h2>7. User Rights and How to Exercise Them</h2>
+        <p>Users have the following rights and can exercise them at any time:</p>
+        <ul>
+            <li><strong>Stop Location Sharing</strong>: Disable 'Auto-send My Location' in app settings</li>
+            <li><strong>Revoke Location Permission</strong>: Remove permission in iOS Settings > Privacy > Location Services</li>
+            <li><strong>Change Call Sign</strong>: Changing the call sign in app settings automatically exits from the existing group</li>
+            <li><strong>Delete App</strong>: All information on the device is immediately deleted when the app is uninstalled</li>
+        </ul>
+        
+        <h2>8. Location Information Terms of Use</h2>
+        
+        <h3>8.1 Consent to Location Information Collection</h3>
+        <p>The App collects user location information to provide location-based services. Location information collection only occurs when users explicitly consent during app installation.</p>
+        
+        <h3>8.2 Purpose of Using or Providing Location Information</h3>
+        <ul>
+            <li>Real-time location sharing between friends</li>
+            <li>Displaying locations on the map</li>
+            <li>Location-based notification services</li>
+        </ul>
+        
+        <h3>8.3 Recipients of Location Information</h3>
+        <p>Provided only to users using the same call sign (Topic).</p>
+        
+        <h3>8.4 Timing of Location Information Provision</h3>
+        <ul>
+            <li>When the user presses the 'Check Location' button</li>
+            <li>When receiving a friend's location request with 'Auto-send My Location' enabled</li>
+        </ul>
+        
+        <h2>9. Children's Privacy Protection</h2>
+        <p>The App does not collect personal information from children under 14 years of age. Consent from a legal guardian is required for children under 14 to use the app.</p>
+        
+        <h2>10. Changes to Privacy Policy</h2>
+        <p>This privacy policy may be revised in accordance with changes in relevant laws or services. Changes will be announced in advance through in-app notifications, and important changes will be announced at least 7 days in advance.</p>
+        
+        <div class="contact">
+            <h3>11. Contact Information</h3>
+            <p>If you have any questions about our privacy practices, please contact us:</p>
+            <ul>
+                <li><strong>Email</strong>: musimain@naver.com</li>
+                <li><strong>Response Time</strong>: Within 3 business days</li>
+            </ul>
+            <p style="margin-top: 20px; font-size: 14px;">
+                For reports or consultations regarding privacy infringement, you may contact the following organizations:<br>
+                • Privacy Infringement Report Center (privacy.kisa.or.kr / 118)<br>
+                • Personal Information Dispute Mediation Committee (www.kopico.go.kr / 1833-6972)<br>
+                • Supreme Prosecutors' Office Cyber Investigation Department (www.spo.go.kr / 1301)<br>
+                • National Police Agency Cyber Safety Bureau (cyberbureau.police.go.kr / 182)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
