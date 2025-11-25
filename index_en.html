@@ -96,6 +96,21 @@
             text-decoration: underline;
         }
         
+        .btn {
+            display: inline-block;
+            padding: 2px 16px;
+            background-color: #007aff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+        
+        .btn:hover {
+            background-color: #0051d5;
+        }
+        
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
@@ -108,141 +123,149 @@
             h2 {
                 font-size: 20px;
             }
+            
+            .btn {
+                display: block;
+                margin-left: 0;
+                margin-top: 10px;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Last Updated: January 1, 2025 | Effective Date: January 1, 2025</p>
+        <p class="subtitle">Last Updated: January 1, 2025 | Effective Date: January 1, 2025 
+            <a href="privacy-policy-ko.html" class="btn">한국어 버전</a></p>
         
         <div class="highlight">
-            <p><strong>Where We Are</strong> (the "App") values your privacy and complies with applicable privacy laws and regulations.</p>
+            <p><strong>Where We Are</strong> (hereinafter referred to as "the App") values your privacy and complies with applicable data protection laws, including the Personal Information Protection Act.</p>
         </div>
         
-        <h2>1. Purpose of Collecting and Using Personal Information</h2>
+        <h2>1. Purpose of Collection and Use of Personal Information</h2>
         <p>The App collects the following personal information to provide real-time location sharing services between friends:</p>
         
         <h3>1.1 Types of Personal Information Collected</h3>
         <ul>
             <li><strong>Location Information</strong>: GPS-based real-time location (latitude, longitude, accuracy, speed)</li>
-            <li><strong>User Identification</strong>: Device unique identifier (Device ID), push notification token</li>
-            <li><strong>User Settings</strong>: Nickname, Call sign (Topic)</li>
-            <li><strong>Device Information</strong>: Transmission timestamp</li>
+            <li><strong>User Identification Information</strong>: Device unique identifier (Device ID), push notification token</li>
+            <li><strong>User Settings Information</strong>: Nickname, group code (Topic)</li>
+            <li><strong>Device Information</strong>: Transmission time</li>
         </ul>
         
         <h3>1.2 Methods of Collection</h3>
         <ul>
-            <li>Directly entered by users during app usage</li>
-            <li>Automatically collected when location permission is granted</li>
-            <li>Received through push notification service</li>
+            <li>Direct input by users during app usage</li>
+            <li>Automatic collection when location permission is granted</li>
+            <li>Message reception through push notification services</li>
         </ul>
         
-        <h2>2. Purpose of Using Personal Information</h2>
-        <p>The collected personal information is used solely for the following purposes:</p>
+        <h2>2. Purpose of Use of Personal Information</h2>
+        <p>Collected personal information is used only for the following purposes:</p>
         <ul>
-            <li><strong>Location Sharing Service</strong>: Real-time location sharing with friends using the same call sign (Topic)</li>
-            <li><strong>Location Request/Response Processing</strong>: Automatic response to friends' location requests</li>
-            <li><strong>Service Quality Improvement</strong>: App error analysis and service enhancement</li>
+            <li><strong>Providing Location Sharing Services</strong>: Real-time location sharing with friends using the same group code (Topic)</li>
+            <li><strong>Processing Location Requests/Responses</strong>: Automatic response to friends' location requests</li>
+            <li><strong>Service Quality Improvement</strong>: App error analysis and service improvement</li>
         </ul>
         
         <h2>3. Retention and Use Period of Personal Information</h2>
         
         <h3>3.1 Real-time Location Information</h3>
         <ul>
-            <li><strong>Server Transmission</strong>: Not stored on the server; only used for message relay</li>
-            <li><strong>Local Device Storage</strong>: Cached for up to 24 hours to display friends' last known locations, then automatically deleted</li>
+            <li><strong>Server Transmission</strong>: No separate storage on server; used only for transmission</li>
+            <li><strong>Local Device Storage</strong>: Stored to display friends' last known location. Automatically deleted after maximum 24 hours of cache storage</li>
             <li><strong>No Long-term Storage</strong>: Location information is not stored in any database</li>
         </ul>
         
         <h3>3.2 User Settings Information</h3>
         <ul>
-            <li><strong>Device Storage</strong>: Retained until the app is deleted</li>
-            <li><strong>No Server Storage</strong>: Nickname and call sign are stored only on the device and not transmitted to servers</li>
+            <li><strong>Device Storage</strong>: Retained until app deletion</li>
+            <li><strong>No Server Storage</strong>: Nicknames and location information are temporarily stored for display purposes only and not saved in any separate database</li>
         </ul>
         
         <h2>4. Provision of Personal Information to Third Parties</h2>
         <p>The App does not provide personal information to third parties, except in the following cases:</p>
         <ul>
-            <li><strong>Users with Same Call Sign</strong>: Location information is shared in real-time with friends using the same call sign (with user's explicit consent)</li>
+            <li><strong>Users with Same Group Code</strong>: Location information is shared in real-time with friends using the same group code (with explicit user consent)</li>
             <li><strong>Legal Requirements</strong>: When required by law or necessary to comply with legal obligations</li>
         </ul>
         
         <div class="highlight">
-            <p><strong>Important:</strong> Sharing a call sign (Topic) means sharing your location information with all users in that group. Only share your call sign with people you trust.</p>
+            <p><strong>Important:</strong> Sharing a group code (Topic) means sharing your location information with all users in that group. Please share group codes only with people you trust.</p>
         </div>
         
-        <h2>5. Destruction Procedure and Method</h2>
+        <h2>5. Destruction Procedures and Methods of Personal Information</h2>
         
         <h3>5.1 Automatic Destruction</h3>
         <ul>
-            <li><strong>Server Location Data</strong>: No separate storage on server (used only for message relay)</li>
+            <li><strong>Server Location Data</strong>: No separate storage on server (used only for message transmission)</li>
             <li><strong>Local Cache</strong>: Automatically deleted after 24 hours</li>
         </ul>
         
         <h3>5.2 Manual Destruction</h3>
         <ul>
             <li><strong>App Deletion</strong>: All information stored on the device is immediately deleted when the app is uninstalled</li>
-            <li><strong>Settings Reset</strong>: All friend location information can be deleted using the 'Delete All Friends' feature in the app</li>
+            <li><strong>Settings Reset</strong>: All friend location information can be deleted using the 'Clear All Friends' function in app settings</li>
         </ul>
         
-        <h2>6. Security Measures</h2>
-        <p>The App takes the following measures to ensure the security of personal information:</p>
+        <h2>6. Security Measures for Personal Information</h2>
+        <p>The App implements the following measures to ensure the security of personal information:</p>
         <ul>
-            <li><strong>Encrypted Communication</strong>: Secure data transmission using HTTPS/TLS protocol</li>
-            <li><strong>Minimal Permissions</strong>: Collecting only the minimum information necessary for service provision</li>
-            <li><strong>Automatic Deletion</strong>: Operating an automatic deletion system when the retention period expires</li>
-            <li><strong>Access Control</strong>: Location information accessible only to users who know the call sign</li>
+            <li><strong>Encrypted Communication</strong>: Safe data transmission using HTTPS/TLS protocol</li>
+            <li><strong>Minimum Permissions</strong>: Collection of only the minimum information necessary for service provision</li>
+            <li><strong>Automatic Deletion</strong>: Automatic deletion system after retention period (24 hours)</li>
+            <li><strong>Access Control</strong>: Location information sharing only possible for users who know the group code</li>
         </ul>
         
         <h2>7. User Rights and How to Exercise Them</h2>
         <p>Users have the following rights and can exercise them at any time:</p>
         <ul>
-            <li><strong>Stop Location Sharing</strong>: Disable 'Auto-send My Location' in app settings</li>
-            <li><strong>Revoke Location Permission</strong>: Remove permission in iOS Settings > Privacy > Location Services</li>
-            <li><strong>Change Call Sign</strong>: Changing the call sign in app settings automatically exits from the existing group</li>
-            <li><strong>Delete App</strong>: All information on the device is immediately deleted when the app is uninstalled</li>
+            <li><strong>Stop Location Sharing</strong>: Disable 'Auto-send Location' in app settings</li>
+            <li><strong>Revoke Location Permission</strong>: Remove permission in iOS Settings > Privacy & Security > Location Services</li>
+            <li><strong>Change Group Code</strong>: Automatically leave existing group when changing group code in app settings</li>
+            <li><strong>Delete App</strong>: All information on device is immediately deleted upon app deletion</li>
         </ul>
         
         <h2>8. Location Information Terms of Use</h2>
         
-        <h3>8.1 Consent to Location Information Collection</h3>
-        <p>The App collects user location information to provide location-based services. Location information collection only occurs when users explicitly consent during app installation.</p>
+        <h3>8.1 Consent for Location Information Collection</h3>
+        <p>The App collects users' location information to provide location-based services. Location information collection occurs only when users explicitly consent during app installation.</p>
         
-        <h3>8.2 Purpose of Using or Providing Location Information</h3>
+        <h3>8.2 Purpose of Use or Provision of Location Information</h3>
         <ul>
             <li>Real-time location sharing between friends</li>
-            <li>Displaying locations on the map</li>
+            <li>Location display on maps</li>
             <li>Location-based notification services</li>
         </ul>
         
         <h3>8.3 Recipients of Location Information</h3>
-        <p>Provided only to users using the same call sign (Topic).</p>
+        <p>Provided only to users using the same group code (Topic).</p>
         
         <h3>8.4 Timing of Location Information Provision</h3>
         <ul>
-            <li>When the user presses the 'Check Location' button</li>
-            <li>When receiving a friend's location request with 'Auto-send My Location' enabled</li>
+            <li>When user presses the 'Check Location' button</li>
+            <li>When receiving a friend's location request with 'Auto-send Location' setting enabled</li>
         </ul>
         
-        <h2>9. Children's Privacy Protection</h2>
-        <p>The App does not collect personal information from children under 14 years of age. Consent from a legal guardian is required for children under 14 to use the app.</p>
+        <h2>9. Protection of Children's Personal Information</h2>
+        <p>The App does not collect personal information from children under 14 years of age. For children under 14 to use the app, consent from a legal guardian is required.</p>
         
         <h2>10. Changes to Privacy Policy</h2>
-        <p>This privacy policy may be revised in accordance with changes in relevant laws or services. Changes will be announced in advance through in-app notifications, and important changes will be announced at least 7 days in advance.</p>
+        <p>This Privacy Policy may be modified according to changes in relevant laws or services. Changes will be announced in advance through in-app notices, and important changes will be announced at least 7 days in advance.</p>
         
         <div class="contact">
             <h3>11. Contact Information</h3>
-            <p>If you have any questions about our privacy practices, please contact us:</p>
+            <p>If you have any questions regarding personal information processing, please contact us:</p>
             <ul>
                 <li><strong>Email</strong>: musimain@naver.com</li>
                 <li><strong>Response Time</strong>: Within 3 business days</li>
             </ul>
             <p style="margin-top: 20px; font-size: 14px;">
-                For reports or consultations regarding privacy infringement, you may contact the following organizations:<br>
-                • Privacy Infringement Report Center (privacy.kisa.or.kr / 118)<br>
+                For reporting personal information violations or consultation needs, you may contact the following organizations in Korea:<br>
+                • Personal Information Infringement Report Center (privacy.kisa.or.kr / 118)<br>
                 • Personal Information Dispute Mediation Committee (www.kopico.go.kr / 1833-6972)<br>
-                • Supreme Prosecutors' Office Cyber Investigation Department (www.spo.go.kr / 1301)<br>
+                • Supreme Prosecutors' Office Cyber Investigation Division (www.spo.go.kr / 1301)<br>
                 • National Police Agency Cyber Safety Bureau (cyberbureau.police.go.kr / 182)
             </p>
         </div>
